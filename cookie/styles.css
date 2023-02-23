@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0 auto;
+    background-color: cadetblue;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;   
+}
+
+h2 {
+    display: inline;
+}
+
+.leftcolumn {
+    border-right: 10px solid black;
+    background-color: white;
+    float: left;
+    width: 33.33%;
+    height: 100vh;
+}
+
+.middlecolumn {
+    border-right: 10px solid black;
+    float: left;
+    width: 33.33%;
+    height: 100vh;
+    padding: 10px 0px 10px 10px;
+}
+
+.rightcolumn {
+    background-color: white;
+    float: left;
+    width: 33.33%;
+    height: 100vh;
+}
+
+table {
+    width: 80%;
+}
+
+tr {
+    width: 50%;
+}
+
+table tr:nth-child(n+3) {
+    visibility: hidden;
+}
+
+th {
+    height: 50px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+td {
+    text-align: center;
+}
+
+.item .qty{
+    width: 50%;
+    height: 50px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.buysell {
+    width: 100%;
+    height: 50px;
+    background-color: #A0AEC1;
+    font-weight: bold;
+}
+
+.buysell:hover:enabled {
+    background-color: #495E88;
+    color: white;
+}
+
+img {
+    width:100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn, .middlecolumn{
+        width: 100%;
+        height: 50%;
+    }
+}

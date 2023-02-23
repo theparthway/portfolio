@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #66d9ff;
+}
+
+.container {
+    text-align: center;
+    width: 200px;
+}
+
+.input input {
+    width: 100%;
+    height: 50px;
+}
+
+button:hover {
+    background-color: chocolate;
+    color: white;
+}
+
+li,
+ul {
+    width: 100%;
+}
+
+ul {
+    line-height: 1.5em;
+}
+
+li > button {
+    text-align: right;
+}

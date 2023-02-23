@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: beige;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.input {
+    font-size: larger;
+    position: absolute;
+    left: 43%;
+    margin: 10px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+.textbox input{
+    visibility: hidden;
+    width: 100%;
+    height: 30px;
+}
+
+.output {
+    font-size: x-large;
+    position: absolute;
+    top: 43%;
+    left: 40%;
+    background-color: aquamarine;
+    padding: 20px 50px 50px 50px;
+    border-radius: 10px;
+}
+
+.output button {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    padding: 5px 10px;
+
+}
+
+.output button:hover {
+    background-color:blue;
+    color: white;
+    font-weight: bold;
+}

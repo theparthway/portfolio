@@ -1,0 +1,37 @@
+    let word1 = word;
+    for (let i=0;i<=4;i++) {
+        let cellNumber = currentCell - (5 - i);
+        for(let j=0;j<=4;j++) {
+            if (word1[j] == cells[cellNumber].textContent) {
+                word1 = word1.substring(0, j) + '.' + word1.substring(j + 1);
+                console.log(word1);
+                cells[cellNumber].style.background = halfCorrectColour;
+            }
+        }
+    }
+    for(let i=0;i<=4;i++) {
+        let cellNumber = currentCell - (5 - i);
+        if (cells[cellNumber].textContent == word1[i]) {
+            word1 = word1.substring(0, i) + ' ' + word1.substring(i + 1);
+            console.log(word1);
+            cells[cellNumber].style.background = correctColour;
+        }
+    }
+
+    for (let i=0;i<=4;i++) {
+        let cellNumber = currentCell - (5 - i);
+        if (cells[cellNumber].style.background != correctColour && cells[cellNumber].style.background != halfCorrectColour) {
+            cells[cellNumber].style.background = "grey";
+            console.log(cells[cellNumber].textContent);
+            remaining = remaining.replace(cells[cellNumber].textContent, '');
+            rem.textContent = remaining;
+        }
+    }
+
+    if (word1 == '     ') {
+        label.textContent = "You Won!";
+        inGame = false;
+    } else if (attempt == 6) {
+        label.textContent = "You Lost, the word was: " + word;
+        inGame = false;
+    }

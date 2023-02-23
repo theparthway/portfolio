@@ -1,0 +1,67 @@
+body {
+    background-color: aquamarine;
+}
+
+.header {
+    font-family: 'Roboto', Times, serif;
+    text-align: center;
+}
+
+#clockContainer {
+    position: relative;
+    margin: auto;
+    height: 440px;
+    width: 440px;
+    background: url("clock.jpg") no-repeat;
+    background-size: 100%;
+}
+
+#hour, #minute, #second {
+    transform-origin: bottom;
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#hour {
+    height: 25%;
+    width: 9px;
+    top: 25.4%;
+    left: 49.2%;
+    opacity: 0.8;
+}
+
+#minute {
+    height: 35%;
+    width: 6px;
+    top: 15.4%;
+    left: 49.4%;
+    opacity: 0.8;
+}
+
+#second {
+    height: 35%;
+    width: 2px;
+    top: 15.4%;
+    left: 49.6%;
+    opacity: 0.8;
+}
+
+a {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    margin: 50px 0px;
+    position: absolute;
+    left: 50%;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    width: 60px;
+}
+
+a:hover {
+    color: white;
+    background-color: blue;
+}

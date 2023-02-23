@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" 
+        src="wordle.js">
+    </script>
+    <title>Hard Wordle</title>
+</head>
+<body>
+    <input type="checkbox" id="color-blind" name="vehicle1" value="Bike" onchange="blindMode(this)">
+    <label for="vehicle1">Dark mode</label><br>
+    <audio id="buzzer">   
+        <source src="buzzer.mp3" /></audio>
+    <audio id="type">   
+        <source src="type.mp3" /></audio>
+    <audio id="winner">
+        <source src="winner.mp3" /></audio>
+    <div class="header">
+        <h1>HARD WORDLE</h1>
+    </div>
+    <div class="row1 board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="row2 board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="row3 board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="row4 board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="row5 board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="row6 board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    
+    <h3 class="label"></h3>
+    <h3 class="label2">Remaining:</h3>
+    <h3 class="remaining"></h3>
+    <div class="btn-container">
+        <button class="btn">New Word</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

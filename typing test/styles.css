@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', sans-serif;
+    width: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+.cursor {
+    background-color: rgba(128, 128, 128, 0.774);
+}
+
+.done {
+    color: rgba(128, 128, 128, 0.753);
+}
+
+input {
+    cursor: pointer;
+}
+
+label {
+    color: white;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.stats {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: large;
+}
+
+#typing {
+    color: white;
+    font-size: x-large;
+    position: absolute;
+    top: 35%;
+    left: 32%;
+    border-radius: 10px;
+    text-align: center;
+    width: 35%;
+}
+
+.btn {
+    position: absolute;
+    left: 44.5%;
+    top: 60%;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.btn button {
+    font-size:small;
+    width: 150px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn button:hover {
+    background-color: white;
+    color: black;
+}

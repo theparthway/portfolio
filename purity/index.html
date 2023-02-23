@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+  <script type="text/javascript" src="questions.js"></script>
+  <title>Quiz App</title>
+</head>
+<body>
+  <div class="container">
+      <div id="score">0</div>
+      <div class="header"><h1>Purity Test</h1></div>
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Yes</button>
+        <button class="btn">No</button>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start</button><br>
+    </div>
+    <input type="checkbox" name="virgin" id="virgin" checked="false"><label id="virginlabel" for="virgin">Virgin?</label>
+  </div>
+</body>
+</html>

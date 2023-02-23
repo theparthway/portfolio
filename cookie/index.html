@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Cookie Clicker Clone</title>
+</head>
+<body>
+    <div class="leftcolumn">
+        <div class="header">
+            <h4>Cookie Monster's Bakery</h4>
+            <h2 class="cookies">0</h2><h2> cookies</h2>
+            <h4>Per Second: </h4><h4 class="perSecond">0</h4>
+        </div>
+        <img class="cookieimg" src="assets/cookie.png" alt="cookie">
+    </div>
+    <div class="middlecolumn">
+        <table>
+            <tr>
+            </tr>
+
+            <tr>
+                <td><p class="item" disabled>Cursor</p></td>
+                <td><img src="assets/cursor.png" alt="cursor"></td>
+                <td><p class="qty" data-item="Cursor">0</p></td>
+            </tr>
+
+            <tr>
+                <td><p class="item" disabled>Grandma</p></td>
+                <td><img src="assets/grandmas.gif" alt="grandmas"></td>
+                <td><p class="qty" data-item="Grandma">0</p></td>
+            </tr>
+
+            <tr>
+                <td><p class="item" disabled>Farm</p></td>
+                <td><img src="assets/farm.png" alt="farm"></td>
+                <td><p class="qty" data-item="Farm">0</p></td>
+            </tr>
+
+            <tr>
+                <td><p class="item" disabled>Mine</p></td>
+                <td><img src="assets/mine.png" alt="mine"></td>
+                <td><p class="qty" data-item="Mine">0</p></td>
+            </tr>
+
+            <tr>
+                <td><p class="item" disabled>Factory</p></td>
+                <td><img src="assets/factory.png" alt="factory"></td>
+                <td><p class="qty" data-item="Factory">0</p></td>
+            </tr>
+            
+            <tr>
+                <td><p class="item" disabled>Bank</p></td>
+                <td><img src="assets/bank.png" alt="bank"></td>
+                <td><p class="qty" data-item="Bank">0</p></td>
+            </tr>
+            
+            <tr>
+                <td><p class="item" disabled>Temple</p></td>
+                <td><img src="assets/temple.png" alt="temple"></td>
+                <td><p class="qty" data-item="Temple">0</p></td>
+            </tr>
+            
+            <tr>
+                <td><p class="item" disabled>Wizard Tower</p></td>
+                <td><img src="assets/wizardtower.png" alt="wizardtower"></td>
+                <td><p class="qty" data-item="Wizardtower">0</p></td>
+            </tr>
+        </table>
+    </div>
+    <div class="rightcolumn">
+
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Cost</th>
+            </tr>
+
+            <tr>
+                <td><button class="buysell" disabled>Cursor</button></td>
+                <td><p class="Cost" data-item="Cursor">15</p></td>
+            </tr>
+
+            <tr>
+                <td><button class="buysell" disabled>Grandma</button></td>
+                <td><p class="Cost" data-item="Grandma">100</p></td>
+            </tr>
+
+            <tr>
+                <td><button class="buysell" disabled>Farm</button></td>
+                <td><p class="Cost" data-item="Farm">1100</p></td>
+            </tr>
+
+            <tr>
+                <td><button class="buysell" disabled>Mine</button></td>
+                <td><p class="Cost" data-item="Mine">12000</p></td>
+            </tr>
+
+            <tr>
+                <td><button class="buysell" disabled>Factory</button></td>
+                <td><p class="Cost" data-item="Factory">130000</p></td>
+            </tr>
+            
+            <tr>
+                <td><button class="buysell" disabled>Bank</button></td>
+                <td><p class="Cost" data-item="Bank">1400000</p></td>
+            </tr>
+            
+            <tr>
+                <td><button class="buysell" disabled>Temple</button></td>
+                <td><p class="Cost" data-item="Temple">20000000</p></td>
+            </tr>
+            
+            <tr>
+                <td><button class="buysell" disabled>Wizard tower</button></td>
+                <td><p class="Cost" data-item="Wizardtower">330000000</p></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

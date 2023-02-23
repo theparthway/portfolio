@@ -1,0 +1,83 @@
+* {
+    font-family: Helvetica, Times, serif;
+}
+
+body {
+    background-color: aquamarine;
+    height: 100vh;
+    position: relative
+}
+
+.container {
+    margin: 0;
+    background-color: darkblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    /* border-radius: 40px; */
+    color: white;
+    height: 30%;
+    width: 100vw;
+}
+
+.container .header , .container .textbox, .container .btn {
+    padding: 5px;
+    text-align: center;
+}
+
+.container .btn > button {
+    border: none;
+    color: gray;
+    padding: 10px 30px;
+    color: black;
+}
+
+.container .btn > button:hover {
+    background-color: black;
+    color: white;
+}
+
+.container .textbox > input {
+    height: 20px;
+    width: 200px;
+    margin: 0px 0px 10px 0px;
+}
+
+.result {
+    visibility: hidden;
+    margin: 0;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    /* border-radius: 40px; */
+    color: white;
+    height: 30%;
+    width: 100vw;
+    text-align: center;
+}
+
+.result h1, .result button{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.result button {
+    top: 80%;
+    width: 20%;
+}
+
+.result button:hover {
+    background-color: gray;
+    color: white;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Color flipper</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input">
+            <input type="radio" name="choice" value="colors" checked><b>colors</b>
+            <input type="radio" name="choice" value="hex"><b>hex</b>
+            <input type="radio" name="choice" value="input"><b>input</b>
+        </div>
+        <div class="output">
+            <div class="text">Background Color: <b><span class="color">beige</span></b></div>
+            <div class="textbox">
+                <input type="text" placeholder="color" class="textbox">
+            </div>
+            <button class="btn" id="btn">Click me</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
