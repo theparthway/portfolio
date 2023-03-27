@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: local("AvenirNext-Bold"), url("./fonts/AvenirNext-Bold.woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: local("AvenirNext-Italic"), url("./fonts/AvenirNext-Italic.woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: local("AvenirNext-Regular"), url("./fonts/AvenirNext-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,8 +31,9 @@ canvas {
 }
 
 #app {
-  font-family: "Poppins", sans-serif;
+  font-family: "Avenir Next", sans-serif;
   position: absolute;
+  background-color: black;
   color: white;
   width: 100%;
   margin: 0px;
@@ -21,12 +43,11 @@ canvas {
 }
 
 header {
-  grid-column: 2 / span 5;
+  grid-column: 2 / span 12;
   font-size: 2rem;
-  margin: 2rem 10rem 25rem 0rem;
+  margin: 2rem 10rem 15rem 0rem;
   line-height: 5rem;
 }
-
 
 h1 {
   font-weight: bolder;
