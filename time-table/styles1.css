@@ -3,15 +3,15 @@
   font-family: Helvetica, sans-serif;
 
   --zero: black;
-  --one: #0a0708;
+  --one: #d1c5ad;
   --two: #444444;
-  --three: #747474;
+  --three: #d1c5ad;
   --four: #b1b1b1;
   --five: white;
 }
 
 body {
-  background-color: lightblue;
+  background-color: var(--zero);
   margin: 0;
   padding: 0;
 }
@@ -22,7 +22,7 @@ body {
   text-decoration: none;
   text-align: center;
   background-color: var(--four);
-  color: var(--one);
+  color: var(--zero);
   cursor: pointer;
 }
 
@@ -38,7 +38,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--one);
-  color: var(--five);
+  color: var(--zero);
   margin: 0.5rem;
   padding: 2rem;
   text-align: center;
@@ -47,7 +47,7 @@ body {
 
 .current {
   background-color: var(--one);
-  color: var(--four);
+  color: var(--zero);
 }
 
 .year {
@@ -83,6 +83,10 @@ button:hover {
 }
 
 @media (max-width: 800px) {
+  .input {
+    padding: 1rem 1rem;
+  }
+
   .container {
     display: grid;
     grid-template-columns: 80vw;

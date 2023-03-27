@@ -55,13 +55,13 @@ h1 {
   font-size: 7rem;
   cursor: pointer;
   margin-bottom: 10rem;
-  color: rgb(209, 197, 173);
+  color: #d1c5ad;
 }
 
 h2 {
   font-weight: bold;
   font-size: 3rem;
-  color: rgb(209, 197, 173);
+  color: #d1c5ad;
 }
 
 a {
@@ -81,7 +81,7 @@ p {
 
 section {
   grid-column: 2 / span 10;
-  background-color: hsl(88, 25%, 11%, 0.5);
+  background-color: #1d231580;
   padding: 1rem 5rem;
   margin: 1rem;
   font-size: 1.25rem;
