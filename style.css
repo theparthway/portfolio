@@ -43,15 +43,16 @@ canvas {
 }
 
 header {
-  grid-column: 2 / span 12;
-  font-size: 2rem;
+  grid-column: 3 / span 12;
+  font-weight: bold;
   margin: 2rem 10rem 15rem 0rem;
-  line-height: 5rem;
+  letter-spacing: 0.05rem;
+  line-height: 6rem;
 }
 
 h1 {
   font-weight: bolder;
-  font-size: 5rem;
+  font-size: 7rem;
   cursor: pointer;
   margin-bottom: 10rem;
   color: rgb(209, 197, 173);
@@ -121,7 +122,7 @@ section {
 .socials {
   width: 30%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 @media only screen and (max-width: 768px) {
@@ -132,7 +133,7 @@ section {
 
   section {
     text-align: center;
-    grid-column: 2 / span 10;
+    grid-column: 1 / span 12;
     padding: 1rem 1rem;
   }
 
