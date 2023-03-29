@@ -90,14 +90,14 @@ button:hover {
   .container {
     display: grid;
     grid-template-columns: 80vw;
-    grid-template-rows: repeat(10, 7rem);
-    height: auto;
+    grid-template-rows: repeat(10, 11rem);
+    height: 1vh;
   }
 
   .container > div {
-    margin: 0.25rem;
-    padding: 0.1rem;
-    color: var(--three);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: var(--zero);
   }
 
   .input {

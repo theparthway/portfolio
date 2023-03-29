@@ -26,15 +26,11 @@ var currentOffset = currentTime.getTimezoneOffset();
 var ISTOffset = 330;   // IST offset UTC +5:30 
 
 var ist = new Date(currentTime.getTime() + (ISTOffset + currentOffset)*60000);
-// let hour = ist.getHours();
-// let minute = ist.getMinutes();
 
 
+let finishedColor = "grey";
+let currentColor = "green";
 
-let color1 = "#d1c5ad";
-let color2 = "#d1c5ad";
-let finishedColor = "black";
-let currentColor = "#444444";
 
 let hour = ist.getHours();
 let minute = ist.getMinutes();
@@ -46,7 +42,6 @@ const section_buttons = [];
 
 function setBoxes(secParam, hourParam) {
     for (let i=0;i<10;i++) {
-        // cols[i].textContent = timings[i] + " | " + tt[secParam][i + 1];
         let courseCode = tt[secParam][i + 1];
 
         cols[i].innerHTML = "";
@@ -116,12 +111,8 @@ function setLabels() {
 
 function changeButton(old_button, new_button) {
     if (old_button) {
-        // old_button.style.color = color1;
-        // old_button.style.backgroundColor = color2;
         old_button.classList.remove("current");
     }
-    // new_button.style.color = color1;
-    // new_button.style.backgroundColor = color3;
     new_button.classList.add("current");
 }
 
@@ -134,7 +125,6 @@ for (let i=0;i<noOfSections;i++) {
     sectionButtons.appendChild(button);
     
     button.addEventListener('click', function() {
-        // info.textContent = tt[i][0] + " | " + (days[day]).toUpperCase();
         changeButton(section_buttons[section], button);
         section = i;
         setLabels();
@@ -151,7 +141,6 @@ for (let i=1;i<7;i++) {
     button.addEventListener('click', function() {
         changeButton(day_buttons[day - 1], button);
         day = i;
-        // info.textContent = tt[section][0] + " | " + (days[day]).toUpperCase();
         setLabels()
     })
 }
