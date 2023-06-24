@@ -19,9 +19,16 @@
   font-style: normal;
 }
 
+/* background-image: radial-gradient(#fafafa 30%, transparent 20%);
+background-color: black;
+background-position: 0 0, 50px 50px;
+background-size: 10px 10px; */
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 50px 50px;
 }
 
 canvas {
@@ -33,7 +40,7 @@ canvas {
 #app {
   font-family: "Avenir Next", sans-serif;
   position: absolute;
-  background-color: black;
+  /* background-color: black; */
   color: white;
   width: 100%;
   margin: 0px;
@@ -45,7 +52,7 @@ canvas {
 header {
   grid-column: 3 / span 12;
   font-weight: bold;
-  margin: 2rem 10rem 15rem 0rem;
+  margin: 2rem 10rem 5rem 0rem;
   letter-spacing: 0.05rem;
   line-height: 6rem;
 }
@@ -68,10 +75,19 @@ a {
   font-size: 2.5rem;
   color: white;
   text-decoration: none;
+
+  text-align: center;
+  display: block;
+  width: 30rem;
+  border: 1px white dashed;
+  border-radius: 10px;
+
 }
 
 a:hover {
-  text-decoration: underline;
+  background-color: #d1c5ad;
+  color: black;
+  border: none;
 }
 
 p {
@@ -81,7 +97,9 @@ p {
 
 section {
   grid-column: 2 / span 10;
-  background-color: #1d231580;
+  /* background-color: #1d231580; */
+  background-color: black;
+  border: 1px white dotted;
   padding: 1rem 5rem;
   margin: 1rem;
   font-size: 1.25rem;
@@ -103,11 +121,11 @@ section {
 }
 
 .top-section {
-  border-radius: 5rem 5rem 0 0;
+  border-radius: 2.5rem 2.5rem 0 0;
 }
 
 .bottom-section {
-  border-radius: 0 0 5rem 5rem;
+  border-radius: 0 0 2.5rem 2.5rem;
 }
 
 .footer {
@@ -127,7 +145,7 @@ section {
 
 @media only screen and (max-width: 768px) {
   header {
-    margin: 3rem 3rem 15rem;
+    margin: 3rem 3rem 5rem;
     grid-column: 1 / span 12;
   }
 
