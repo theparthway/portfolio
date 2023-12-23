@@ -53,7 +53,7 @@ header {
   grid-column: 3 / span 12;
   font-weight: bold;
   margin: 2rem 10rem 5rem 0rem;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.01rem;
   line-height: 6rem;
 }
 
@@ -99,7 +99,7 @@ section {
   grid-column: 2 / span 10;
   /* background-color: #1d231580; */
   background-color: black;
-  border: 1px white dotted;
+  border: 1px white dashed;
   padding: 1rem 5rem;
   margin: 1rem;
   font-size: 1.25rem;
