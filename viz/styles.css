@@ -1,12 +1,13 @@
 .container {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    height: 40vh;
     padding-top: 30vh;
 }
 
 .btns {
-    height:20vh;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 a {
@@ -17,12 +18,10 @@ a {
     text-decoration: none;
     color: initial;
     border: none;
-    height: 10vh;
-    width: 10vw;
-    padding: 2vh;
-    border-radius: 5px;
+    padding: 1rem;
+    border-radius: 10px;
     background-color: cyan;
-    font-size: x-large;
+    font-size: large;
 }
 
 a:hover {
