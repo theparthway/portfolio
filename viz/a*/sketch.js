@@ -21,6 +21,7 @@ let start;
 let end;
 let current;
 
+let text;
 let stat;
 let openNodes;
 let closedNodes;
@@ -81,6 +82,10 @@ function setup() {
     stat = createP("Status: Processing...");
     stat.style('fontSize', '1.5rem');
     stat.position(0, windowHeight / 2 - 100);
+
+    text = createP("Reload for new maze");
+    text.style('fontSize', '1.5rem');
+    text.position(0, windowHeight / 2 - 50);
 
     openNodes = createP("Open nodes: ");
     openNodes.style('fontSize', '1.5rem');
