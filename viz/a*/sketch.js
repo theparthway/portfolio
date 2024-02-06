@@ -27,6 +27,9 @@ let openNodes;
 let closedNodes;
 let totalNodes;
 
+let startButton;
+let resetButton;
+
 let size;
 let w;
 let h;
@@ -76,6 +79,14 @@ function setup() {
     let cnv = createCanvas(size, size);
     cnv.position((windowWidth - size) / 2, (windowHeight - size) / 2);
     
+    startButton = createButton("Start");
+    startButton.position(0, windowHeight / 2 - 150);
+    startButton.mousePressed(startAlgo);
+
+    resetButton = createButton("Reset");
+    resetButton.position(100, windowHeight / 2 - 150);
+    resetButton.mousePressed(resetGrid);
+
     w = size / cols;
     h = size / rows;
     
@@ -98,6 +109,7 @@ function setup() {
     totalNodes = createP("Total nodes: ");
     totalNodes.style('fontSize', '1.5rem');
     totalNodes.position(0, windowHeight / 2 + 100);
+
 
     // 2d array
     for (let i=0;i<rows;i++) {
@@ -124,6 +136,43 @@ function setup() {
 
     // starting openset with one node = start node
     openset.push(start);
+}
+
+function resetGrid() {
+    for (let i=0;i<rows;i++) {
+        for (let j=0;j<cols;j++) {
+            grid[i][j].wall = false;
+            openset = [];
+            closedset = [];
+            path = [];
+            stat.html("Ready to start");
+        }
+    }
+
+    start = grid[0][0];
+    end = grid[rows - 1][cols - 1];
+    start.wall = false;
+    end.wall = false;
+
+    openset.push(start);
+}
+
+function mousePressed() {
+    if (mouseX >= 0 && mouseX < size && mouseY >= 0 && mouseY < size) {
+        let i = floor(mouseX / w);
+        let j = floor(mouseY / h);
+        grid[i][j].wall = !grid[i][j].wall;
+    }
+}
+
+function startAlgo() {
+    openset = [start];
+    closedset = [];
+    path = [];
+
+    stat.html("Status: Processing...");
+
+    loop();
 }
 
 function draw() {
