@@ -1,0 +1,32 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D5E1EF; /* Change this to your desired background color */
+}
+
+.card {
+    width: 320px; /* Adjust this value as needed */
+    height: 497px;
+    padding: 1rem;
+    margin-bottom: 5rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.card p.header {
+    font-weight: bold;
+}
