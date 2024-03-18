@@ -9,11 +9,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #D5E1EF; /* Change this to your desired background color */
+    background-color: #D5E1EF;
 }
 
 .card {
-    width: 320px; /* Adjust this value as needed */
+    width: 320px;
     height: 497px;
     padding: 1rem;
     margin-bottom: 5rem;
