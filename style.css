@@ -57,6 +57,23 @@ header {
   line-height: 6rem;
 }
 
+header {
+  opacity: 0;
+  animation: fadeIn 3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
 h1 {
   font-weight: bolder;
   font-size: 7rem;
