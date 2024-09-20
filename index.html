@@ -1,80 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-	<link rel="stylesheet" href="style.css">
-	<script src="https://kit.fontawesome.com/0832d05046.js" crossorigin="anonymous"></script>
-
-	<title>Parth Shah - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-	<div id="app">
+<body class="bg-secondary text-primary min-h-screen overflow-hidden">
+    <div id="cursor"></div>
+    
+    <div id="overlay" class="fixed inset-0 bg-white flex justify-center items-center z-40">
+        <h1 id="name" class="text-7xl font-bold"></h1>
+    </div>
+    
+    <div id="background" class="fixed inset-0 z-0"></div>
+    
+    <div id="content" class="hidden relative z-10 p-8">
+        <div id="about" class="bg-white rounded-lg p-8 mb-8 shadow-lg transform transition-transform duration-300">
+            <h2 class="text-2xl font-bold mb-4">About</h2>
+            <p>Your about content goes here.</p>
+        </div>
+        <div id="projects" class="bg-white rounded-lg p-8 shadow-lg transform transition-transform duration-300">
+            <h2 class="text-2xl font-bold mb-4">Projects</h2>
+            <p>Your projects content goes here.</p>
+        </div>
+    </div>
 
-		<header>
-			<h1>Parth <br>Shah</h1>
-		</header>
-
-		<section class="about top-section">
-			<p>Inquisitive, passionate, quick-learner. Worked on projects based on Full Stack Web Development, Machine Learning, Python, Javascript, Node, Raspberry Pi, Linux, and more.</p><br>
-		</section>
-
-		<section>
-			<h2>Quotes by Kanye</h2>
-			<p class="kanye">Kanye quote</p>
-			<br>
-			<h5>Refresh to get a new quote</h5>
-		</section>
-
-		<section class="projects">
-			<h2>Projects</h2>
-
-			<div class="project">
-				<a href="/viz/">Algorithms Visualiser</a>
-				<p class="proj-desc">Some algorithms visualised for better understanding.</p>
-			</div>
-
-			<div class="project">
-				<a href="https://github.com/theparthway/full-stack-app">QR Code Ticketing</a>
-				<p class="proj-desc">Simple and personalized way to maintain and validate your guests.</p>
-			</div>
-
-			<div class="project">
-				<a href="/video-ascii/">Video Ascii</a>
-				<p class="proj-desc">Takes in live webcam data and outputs image in ascii relative to brightness.</p>
-			</div>
-
-			<div class="project">
-				<a href="/wordle/">Hard Wordle</a>
-				<p class="proj-desc">Another Wordle clone, but it gives you only difficult words.</p>
-			</div>
-
-			<div class="project">
-				<a href="/typing/">Typing Test</a>
-				<p class="proj-desc">It's impossible to beat the score of 70 in this test.</p>
-			</div>
-
-			<div class="project">
-				<a href="#">Discord Bot</a>
-				<p class="proj-desc">A feature-packed discord bot with built-in game solvers and much more.</p>
-			</div>
-
-
-		</section>
-
-		<section class="footer bottom-section">
-			<p>© Parth Shah 2023</p>
-			<div class="socials">
-				<a href="https://github.com/theparthway/"><i href="https://github.com/theparthway/" class="fa-brands fa-github fa-lg"></i></a>
-				<a href="https://linkedin.com/in/theparthway"><i href="https://linkedin.com/in/theparthway" class="fa-brands fa-linkedin fa-lg"></i></a>
-				<a href="https://www.instagram.com/theparthway/"><i href="https://www.instagram.com/theparthway/" class="fa-brands fa-instagram fa-lg"></i></a>
-			</div>
-		</section>
-	</div>
-	<script src="script.js"></script>
-	<!-- <script type="module" src="/main.js"></script> -->
+    <script src="script.js"></script>
 </body>
 </html>
