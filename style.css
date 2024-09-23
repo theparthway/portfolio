@@ -3,34 +3,44 @@
 @import 'tailwindcss/utilities';
 
 :root {
-    --primary: #333;
-    --secondary: #f0f0f0;
+    --pastel-blue: #EAF2F8;
+    --dark: #333;
+    --pastel-pink: #FFB6C1;
+    --sky-blue: #87CEFA;
 }
 
 body {
-    background-color: var(--secondary);
-    color: var(--primary);
+    background-color: var(--pastel-blue);
+    color: var(--dark);
+    cursor: none;
+    font-family: 'Space Mono', monospace;
 }
 
-#cursor {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: orange;
-    position: fixed;
+.cursor {
     pointer-events: none;
-    z-index: 9999;
 }
 
-.name-letter {
-    display: inline-block;
-    transition: filter 0.3s ease;
+.cursor__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 1000;
 }
 
-.name-letter:hover {
-    filter: blur(4px);
+.cursor__ball circle {
+    fill: var(--sky-blue)
+}
+
+#name {
+    position: relative;
+    color: var(--pastel-pink)
 }
 
 #about, #projects {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hoverable {
+    cursor: none;
 }
